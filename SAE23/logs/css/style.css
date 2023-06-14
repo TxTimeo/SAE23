@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+
+@keyframes lights {
+    0% {
+      color: hsl(233, 29%, 95%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.2),
+        0 0 0.125em hsla(320, 100%, 60%, 0.3),
+        -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+    
+    30% { 
+      color: hsl(227, 39%, 95%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 60%, 0.5),
+        -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    40% { 
+      color: hsl(228, 28%, 90%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 90%, 0.5),
+        -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+        0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    70% {
+      color: hsl(229, 26%, 87%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 60%, 0.5),
+        0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    100% {
+      color: hsl(233, 36%, 95%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.2),
+        0 0 0.125em hsla(320, 100%, 60%, 0.3),
+        1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+    
+  }
+  
+  body {
+    margin: 0;
+    font: 100% / 1.5 Raleway, sans-serif;
+    color: hsl(230, 100%, 95%);
+    background: linear-gradient(135deg, hsl(230, 40%, 12%), hsl(230, 20%, 7%));
+    height: 100vh;
+    display: flex;
+  }
+  
+.TITRE {
+    margin: auto;
+    font-size: 3.5rem;
+    font-weight: 300;
+    animation: lights 4s 750ms linear infinite;
+  }
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-2px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(2px, 0, 0);
+    }
+}
+
+body {
+    background: linear-gradient(120deg,#2980b9, #8e44ad);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+*{
+    font-family: "Poppins", sans-serif;
+	box-sizing: border-box;
+    color:black;
+}
+
+form {
+	width: 500px;
+	padding: 30px;
+	background: #fff;
+	border-radius: 15px;
+    box-shadow: 0px 3px 3px 2px rgb(70, 62, 62);
+}
+
+.test {
+  margin-top: 10%;
+}
+
+input {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+    
+}
+label {
+	color: #adadad;
+	font-size: 18px;
+	padding: 10px;
+}
+
+button {
+	float: right;
+	background: #555;
+	padding: 10px 15px;
+	color: #fff;
+	border-radius: 5px;
+	margin-right: 10px;
+	border: none;
+}
+
+
+h1 {
+	text-align: center;
+	color: #fff;
+}
+
+a:hover{
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+	float: right;
+	background: #555;
+	padding: 10px 15px;
+	color: #000;
+	border-radius: 5px;
+	margin-right: 10px;
+	border: none;
+	
+  }
+
+.btn-connexion {
+    background-color: #2691d9;
+    color: #fff;
+    border-radius: 15px;
+    border: none;
+    padding: 15px 15px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+.btn-connexion:hover {
+    background-color: #136aa3;
+    color: #fff;
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+
+  }
+
+label {
+  border: none;
+}
+fieldset input {
+    border: none;
+    border-bottom: 2px solid #ccc;
+  }
+  
+.error-message {
+    background: #F2DEDE;
+    color: #b81c1a;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+    text-align: center;
+    animation: shake 1s cubic-bezier(.36, .07, .19, .97) both;
+
+
+ }
+ 
+.login-btn {
+    background-color: #2691d9;
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+/***** Style Navbar *****/
+/* Couleur de fond de la navbar */
+.navbar {
+  background: #050028 !important;
+}
+
+/* Text "Portfolio" */
+.navbar-brand h2:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 3px;
+  position: absolute;
+  background: rgb(248, 248, 255);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.navbar-brand h2:hover:after {
+  width: 8%;
+  left: 0;
+}
+
+/* Text bouton de navigation */
+a span {
+  color: rgb(216, 214, 214);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: large;
+}
+
+/* Effet quand on passe la souris dessus */
+a span:hover {
+  color: rgb(232, 148, 21);
+}
